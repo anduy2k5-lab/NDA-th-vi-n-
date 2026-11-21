@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thư viện ảnh tương tác sử dụng HTML, CSS và JavaScript DOM">
+  <title>Thư viện ảnh tương tác</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="initializeGallery()">
+  <main class="container">
+    <header class="intro">
+      <span class="eyebrow">BÀI TẬP JAVASCRIPT · DOM</span>
+      <h1>Thư viện ảnh tương tác</h1>
+      <p>Đưa chuột lên một ảnh bên dưới hoặc dùng phím <kbd>Tab</kbd> để khám phá thư viện.</p>
+    </header>
+
+    <div id="image" class="display-area" role="status" aria-live="polite">
+      Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <section class="gallery-section" aria-label="Danh sách hình ảnh">
+      <h2>Khám phá bộ sưu tập <span>06 ảnh</span></h2>
+      <div class="gallery">
+        <img class="preview" src="images/nui-rung.svg" alt="Núi rừng xanh mát dưới bầu trời trong" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="upDate(this)">
+        <img class="preview" src="images/bien-xanh.svg" alt="Bãi biển xanh với cát vàng và hàng dừa" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="upDate(this)">
+        <img class="preview" src="images/pho-co.svg" alt="Con phố cổ với mái ngói và đèn lồng" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="upDate(this)">
+        <img class="preview" src="images/hoang-hon.svg" alt="Hoàng hôn rực rỡ trên mặt hồ yên bình" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="upDate(this)">
+        <img class="preview" src="images/canh-dong.svg" alt="Cánh đồng xanh với ngôi nhà nhỏ bình yên" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="upDate(this)">
+        <img class="preview" src="images/bau-troi-dem.svg" alt="Bầu trời đầy sao trên núi vào ban đêm" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" onclick="upDate(this)">
+      </div>
+    </section>
+    <footer>HTML · CSS · JavaScript | Bài tập tương tác DOM</footer>
+  </main>
+</body>
+</html>

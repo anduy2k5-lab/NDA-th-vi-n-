@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+:root { font-family: "Segoe UI", Arial, sans-serif; color: #17243b; background: #f5f8fc; }
+body { margin: 0; }
+.container { width: min(1050px, calc(100% - 36px)); margin: 42px auto 26px; }
+.intro { margin-bottom: 24px; }
+.eyebrow { font-size: 12px; font-weight: 750; letter-spacing: .17em; color: #5776a3; }
+h1 { margin: 9px 0 8px; font-size: clamp(27px, 4.5vw, 42px); letter-spacing: -.04em; }
+.intro p { margin: 0; color: #64738a; line-height: 1.55; }
+kbd { font: inherit; font-size: .88em; background: #e5edf6; border: 1px solid #cbd7e6; border-radius: 4px; padding: 1px 5px; }
+.display-area {
+  display: flex; justify-content: center; align-items: center; text-align: center;
+  min-height: clamp(250px, 42vw, 415px); padding: 28px;
+  background-color: #dfeaf3;
+  background-image: url(''); background-size: cover; background-position: center;
+  border: 5px solid white; outline: 1px solid #dce5ee;
+  border-radius: 19px; box-shadow: 0 16px 35px rgba(24, 50, 85, .10);
+  color: #243a51; font-size: clamp(17px, 2.6vw, 25px); font-weight: 700;
+  line-height: 1.45; text-shadow: 0 1px 9px rgba(255,255,255,.9), 0 0 20px rgba(255,255,255,.8);
+  transition: background-image .15s ease;
+}
+.gallery-section { margin-top: 30px; }
+h2 { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 19px; letter-spacing: -.02em; margin: 0 0 16px; }
+h2 span { font-size: 12px; color: #73839a; background: #e8eef6; border-radius: 999px; padding: 5px 11px; font-weight: 700; letter-spacing: .06em; }
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.preview { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border: 4px solid white; border-radius: 13px; padding: 0; background: #e7edf4; box-shadow: 0 5px 18px rgba(29, 53, 84, .12); cursor: pointer; transition: transform .18s ease, box-shadow .18s ease; }
+.preview:hover, .preview:focus { outline: 3px solid #4f86c8; outline-offset: 2px; transform: translateY(-3px); box-shadow: 0 9px 22px rgba(29, 53, 84, .21); }
+footer { text-align: center; margin-top: 31px; color: #8793a5; font-size: 12px; }
+@media (max-width: 620px) { .container { margin-top: 24px; } .gallery { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; } .display-area { min-height: 240px; } }
+@media (max-width: 390px) { .gallery { grid-template-columns: 1fr; } }

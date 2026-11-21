@@ -1,0 +1,17 @@
+THƯ VIỆN ẢNH TƯƠNG TÁC — BÀI TẬP JAVASCRIPT
+
+1. Giải nén file ZIP.
+2. Mở file index.html bằng Chrome/Edge.
+3. Di chuột lên từng ảnh: ảnh và mô tả sẽ hiện ở khung lớn.
+4. Rời chuột: khung lớn trở về thông điệp ban đầu.
+5. Nhấn Tab để thử onfocus/onblur; có thể dùng chuột click trên điện thoại.
+6. Nhấn F12 > Console để kiểm tra log và thông tin alt/src.
+
+CÁCH NỘP GITHUB PAGES
+- Tạo repository mới trên GitHub.
+- Upload nội dung bên trong thư mục này (index.html, style.css, script.js và thư mục images) vào THƯ MỤC GỐC repository.
+- Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save.
+- Khi trang được phát hành, nộp địa chỉ https://TEN-TAI-KHOAN.github.io/TEN-REPOSITORY/.
+
+TẤT CẢ HÌNH ẢNH là SVG lưu ngay trong thư mục images, không cần internet để hiển thị.
+Mã dùng id="image", onmouseover/upDate(this), onmouseleave/unDo() theo đề bài.
